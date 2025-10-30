@@ -1,0 +1,41 @@
+# Postman related files that may contain secrets
+*.postman_environment.json
+*environment*.json
+*.env
+.env
+.env.local
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+/tmp/
+*.tmp
+*.log
+
+# Don't commit actual API keys or credentials
+*credentials*.json
+*secrets*.json
+*keys*.json
+*tokens*.json
+
+# Unless they're in the collections folder and properly sanitized
+!collections/**/*.json
